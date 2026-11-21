@@ -1,0 +1,14 @@
+Strata standard benchmark (strata-qwen38-thinking-v1-draft.1)
+Status: complete. 21 of 21 required requests finished, 0 failed, 0 skipped. Time after the model loaded: 1 min 36 s.
+Machine: NVIDIA GeForce RTX 4070 Ti SUPER; AMD Ryzen 5 7600 6-Core Processor; 62 GB RAM; Debian GNU/Linux 13 (trixie) 6.12.113+deb13-amd64.
+Model: qwen3.8-flash-next-iq2_xs, IQ2_XS, context 32768; engine 0.1.63; track default.
+
+Speed (median, min-max, n; the engine's own prompt and decode timings, the client's first-token time):
+  Case        Prompt tok/s                Decode tok/s          TTFT s                Total s               Capped
+  short       n/a                         96.1 (90.3-99.9) n=3  0.51 (0.43-0.56) n=3  5.8 (2.9-5.9) n=3     1/3
+  prompt-4k   2806.7 (2713.3-2885.6) n=3  93.1 (90.6-93.7) n=3  1.48 (1.44-1.53) n=3  7.0 (6.9-7.1) n=3     3/3
+  prompt-16k  3497.0 (3476.1-3502.7) n=3  92.4 (90.9-94.9) n=3  4.71 (4.70-4.74) n=3  10.3 (10.1-10.3) n=3  3/3
+  short is a prompt of about 80 tokens: its prompt rate is dominated by the fixed cost of a request, so it is not shown; read prompt speed from prompt-4k and prompt-16k.
+  Capped = requests that reached the 512-token cap, reasoning and answer together. A capped request's total time is the time to the cap, not to an answer, and it has no first-answer time when it was still reasoning.
+
+Sanity checks: 12 of 12 passed (instruction 4/4, retrieval 4/4, tool calls 4/4).
