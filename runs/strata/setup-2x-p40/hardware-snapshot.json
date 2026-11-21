@@ -1,0 +1,69 @@
+{
+  "captured_at": "2026-11-21T05:52:33.128013+00:00",
+  "commands": {
+    "model_storage_mount": {
+      "command": [
+        "findmnt",
+        "--nofsroot",
+        "-J",
+        "-T",
+        "/home/lilamaris/models",
+        "-o",
+        "SOURCE,FSTYPE,TARGET"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n   \"filesystems\": [\n      {\n         \"source\": \"/dev/mapper/VG0-LG0\",\n         \"fstype\": \"btrfs\",\n         \"target\": \"/home\"\n      }\n   ]\n}\n",
+      "stderr": ""
+    },
+    "storage_devices": {
+      "command": [
+        "lsblk",
+        "-d",
+        "-b",
+        "-J",
+        "-o",
+        "NAME,MODEL,SIZE,ROTA,TRAN"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n   \"blockdevices\": [\n      {\n         \"name\": \"zram0\",\n         \"model\": null,\n         \"size\": 13308952576,\n         \"rota\": false,\n         \"tran\": null\n      },{\n         \"name\": \"nvme0n1\",\n         \"model\": \"ADATA LEGEND 960\",\n         \"size\": 2048408248320,\n         \"rota\": false,\n         \"tran\": \"nvme\"\n      }\n   ]\n}\n",
+      "stderr": ""
+    },
+    "gpu_settings": {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,name,pci.bus_id,memory.total,power.limit,pcie.link.gen.current,pcie.link.width.current,ecc.mode.current",
+        "--format=csv"
+      ],
+      "exit_code": 0,
+      "stdout": "index, name, pci.bus_id, memory.total [MiB], power.limit [W], pcie.link.gen.current, pcie.link.width.current, ecc.mode.current\n0, Tesla P40, 00000000:01:00.0, 24576 MiB, 250.00 W, 3, 8, Disabled\n1, Tesla P40, 00000000:03:00.0, 24576 MiB, 250.00 W, 3, 8, Disabled\n",
+      "stderr": ""
+    },
+    "gpu_topology": {
+      "command": [
+        "nvidia-smi",
+        "topo",
+        "-m"
+      ],
+      "exit_code": 0,
+      "stdout": "\t\u001b[4mGPU0\tGPU1\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tPHB\t0-11\t0\t\tN/A\nGPU1\tPHB\t X \t0-11\t0\t\tN/A\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n",
+      "stderr": ""
+    },
+    "gpu_settings_during_benchmark": {
+      "captured_at": "2026-11-21T05:55:01.216083+00:00",
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,name,pci.bus_id,power.limit,pcie.link.gen.current,pcie.link.width.current",
+        "--format=csv"
+      ],
+      "exit_code": 0,
+      "stdout": "index, name, pci.bus_id, power.limit [W], pcie.link.gen.current, pcie.link.width.current\n0, Tesla P40, 00000000:01:00.0, 250.00 W, 3, 8\n1, Tesla P40, 00000000:03:00.0, 250.00 W, 3, 8\n",
+      "stderr": ""
+    }
+  },
+  "host": {
+    "governor": "powersave",
+    "energy_performance_preference": "performance",
+    "thp": "[always] madvise never",
+    "kernel": "6.12.113+deb13-amd64"
+  }
+}
