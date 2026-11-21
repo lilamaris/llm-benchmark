@@ -1,0 +1,33 @@
+{
+  "access": "local",
+  "api_key": null,
+  "context": 32768,
+  "created": "2026-11-21 14:52:24.125797",
+  "data_dir": "/home/lilamaris/models",
+  "draft_vocab": null,
+  "drafting": "mtp",
+  "extra": {},
+  "family": "qwen",
+  "gpu_roles": null,
+  "gpus": [
+    0,
+    1
+  ],
+  "kv": "int8",
+  "last_used": "2026-11-21 14:52:24.128571",
+  "listen": null,
+  "model": "IQ2_XS",
+  "model_path": "/home/lilamaris/models/IQ2_XS",
+  "mtp": null,
+  "name": "benchmark-p40-iq2xs",
+  "no_key": false,
+  "parallel": 1,
+  "port": 8081,
+  "schema": "strata.launch/1",
+  "split_engine": null,
+  "tune": "skip",
+  "tune_allow_small": false,
+  "tuned_at": null,
+  "tuned_preset": null,
+  "vision": "off"
+}

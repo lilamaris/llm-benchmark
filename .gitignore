@@ -1,0 +1,3 @@
+.state/strata/runtime/
+.state/strata/profiles/*.lock
+.state/strata/profiles/.history/

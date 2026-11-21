@@ -1,0 +1,10 @@
+{
+  "id": "launch-benchmark-p40-iq2xs",
+  "overrides": {
+    "host": "127.0.0.1",
+    "parallel": 1,
+    "port": 8081
+  },
+  "schema_version": 1,
+  "source_config": "/home/lilamaris/.local/state/strata/launch/benchmark-p40-iq2xs.json"
+}
