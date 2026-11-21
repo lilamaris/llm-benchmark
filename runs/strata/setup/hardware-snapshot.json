@@ -1,0 +1,52 @@
+{
+  "captured_at": "2026-11-21T04:19:55.036939+00:00",
+  "commands": {
+    "model_storage_mount": {
+      "command": [
+        "findmnt",
+        "--nofsroot",
+        "-J",
+        "-T",
+        "/home/lilamaris/models",
+        "-o",
+        "SOURCE,FSTYPE,TARGET"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n   \"filesystems\": [\n      {\n         \"source\": \"/dev/mapper/VG0-LG0\",\n         \"fstype\": \"btrfs\",\n         \"target\": \"/home\"\n      }\n   ]\n}\n",
+      "stderr": ""
+    },
+    "storage_devices": {
+      "command": [
+        "lsblk",
+        "-d",
+        "-b",
+        "-J",
+        "-o",
+        "NAME,MODEL,SIZE,ROTA,TRAN"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n   \"blockdevices\": [\n      {\n         \"name\": \"zram0\",\n         \"model\": null,\n         \"size\": 13309308928,\n         \"rota\": false,\n         \"tran\": null\n      },{\n         \"name\": \"nvme0n1\",\n         \"model\": \"ADATA LEGEND 960\",\n         \"size\": 2048408248320,\n         \"rota\": false,\n         \"tran\": \"nvme\"\n      }\n   ]\n}\n",
+      "stderr": ""
+    },
+    "gpu_settings": {
+      "command": [
+        "nvidia-smi",
+        "--query-gpu=index,pci.bus_id,power.limit,pcie.link.gen.current,pcie.link.width.current,ecc.mode.current",
+        "--format=csv"
+      ],
+      "exit_code": 0,
+      "stdout": "index, pci.bus_id, power.limit [W], pcie.link.gen.current, pcie.link.width.current, ecc.mode.current\n0, 00000000:04:00.0, 300.00 W, 3, 16, Enabled\n1, 00000000:05:00.0, 300.00 W, 3, 16, Enabled\n",
+      "stderr": ""
+    },
+    "gpu_topology": {
+      "command": [
+        "nvidia-smi",
+        "topo",
+        "-m"
+      ],
+      "exit_code": 0,
+      "stdout": "\t\u001b[4mGPU0\tGPU1\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNV2\t0-11\t0\t\tN/A\nGPU1\tNV2\t X \t0-11\t0\t\tN/A\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n",
+      "stderr": ""
+    }
+  }
+}
