@@ -1,0 +1,7 @@
+Collected: 2026-11-21T13:51:33.695695+09:00
+lspci-devices.txt: lspci -Dnnk (exit 0)
+lspci-tree.txt: lspci -Dtv (exit 0)
+lspci-gpu-detail.txt: lspci -Dvvnn -s 0000:01:00.0 (exit 0)
+nvidia-kernel-version.txt: cat /proc/driver/nvidia/version (exit 0)
+nvidia-gpu-information.txt: cat /proc/driver/nvidia/gpus/0000:01:00.0/information (exit 0)
+pcie-links.txt: /sys/bus/pci/devices/{0000:00:01.1,0000:01:00.0}/

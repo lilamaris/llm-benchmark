@@ -1,0 +1,2 @@
+index, name, pci.bus_id, driver_version, vbios_version, memory.total [MiB], power.limit [W], power.default_limit [W], power.min_limit [W], power.max_limit [W], compute_cap, pcie.link.gen.current, pcie.link.gen.max, pcie.link.width.current, pcie.link.width.max
+0, NVIDIA GeForce RTX 4070 Ti SUPER, 00000000:01:00.0, 580.196.07, 95.03.45.00.E5, 16376 MiB, 285.00 W, 285.00 W, 100.00 W, 320.00 W, 8.9, 1, 4, 16, 16

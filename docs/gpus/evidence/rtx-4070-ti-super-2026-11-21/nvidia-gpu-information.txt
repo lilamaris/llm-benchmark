@@ -1,0 +1,11 @@
+Model: 		 NVIDIA GeForce RTX 4070 Ti SUPER
+IRQ:   		 100
+GPU UUID: 	 GPU-cf7ec0fd-8a92-66c4-534e-5f54976e8948
+Video BIOS: 	 95.03.45.00.e5
+Bus Type: 	 PCIe
+DMA Size: 	 47 bits
+DMA Mask: 	 0x7fffffffffff
+Bus Location: 	 0000:01:00.0
+Device Minor: 	 0
+GPU Firmware: 	 580.196.07
+GPU Excluded:	 No

@@ -1,0 +1,6 @@
+Collected: 2026-11-21T14:48:53.239051+09:00
+nvidia-smi.txt: nvidia-smi (exit 0)
+nvidia-smi-detail.txt: nvidia-smi -q (exit 0)
+nvidia-smi-query.txt: nvidia-smi --query-gpu=index,name,pci.bus_id,driver_version,vbios_version,memory.total,power.limit,power.default_limit,power.min_limit,power.max_limit,compute_cap,pcie.link.gen.current,pcie.link.gen.max,pcie.link.width.current,pcie.link.width.max --format=csv (exit 0)
+nvidia-smi-topo.txt: nvidia-smi topo -m (exit 0)
+nvidia-smi-nvlink.txt: nvidia-smi nvlink -s (exit 0)

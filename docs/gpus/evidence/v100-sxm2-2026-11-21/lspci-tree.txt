@@ -1,0 +1,39 @@
+Captured: 2026-11-21T10:21:48.764519+09:00
+$ lspci -tv
+Exit code: 0
+
+-[0000:00]-+-00.0  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Root Complex
+           +-00.2  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge IOMMU
+           +-01.0  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge
+           +-01.1-[01-05]----00.0-[02-05]--+-04.0-[03]--
+           |                               +-08.0-[04]----00.0  NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB]
+           |                               \-0c.0-[05]----00.0  NVIDIA Corporation GV100GL [Tesla V100 SXM2 16GB]
+           +-01.2-[06]----00.0  ADATA Technology Co., Ltd. LEGEND 960 NVMe SSD
+           +-02.0  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge
+           +-02.1-[07-0f]----00.0-[08-0f]--+-00.0-[09]--
+           |                               +-08.0-[0a]--
+           |                               +-09.0-[0b]----00.0  Realtek Semiconductor Co., Ltd. RTL8111/8168/8211/8411 PCI Express Gigabit Ethernet Controller
+           |                               +-0a.0-[0c]----00.0  Realtek Semiconductor Co., Ltd. RTL8125 2.5GbE Controller
+           |                               +-0b.0-[0d]--
+           |                               +-0c.0-[0e]----00.0  Advanced Micro Devices, Inc. [AMD] 600 Series Chipset USB 3.2 Controller
+           |                               \-0d.0-[0f]----00.0  Advanced Micro Devices, Inc. [AMD] 600 Series Chipset SATA Controller
+           +-03.0  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge
+           +-04.0  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge
+           +-08.0  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Dummy Host Bridge
+           +-08.1-[10]--+-00.0  Advanced Micro Devices, Inc. [AMD/ATI] Raphael
+           |            +-00.1  Advanced Micro Devices, Inc. [AMD/ATI] Radeon High Definition Audio Controller [Rembrandt/Strix]
+           |            +-00.2  Advanced Micro Devices, Inc. [AMD] Family 19h PSP/CCP
+           |            +-00.3  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 3.1 xHCI
+           |            +-00.4  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 3.1 xHCI
+           |            \-00.6  Advanced Micro Devices, Inc. [AMD] Family 17h/19h/1ah HD Audio Controller
+           +-08.3-[11]----00.0  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge USB 2.0 xHCI
+           +-14.0  Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller
+           +-14.3  Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge
+           +-18.0  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 0
+           +-18.1  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 1
+           +-18.2  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 2
+           +-18.3  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 3
+           +-18.4  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 4
+           +-18.5  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 5
+           +-18.6  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 6
+           \-18.7  Advanced Micro Devices, Inc. [AMD] Raphael/Granite Ridge Data Fabric; Function 7

@@ -1,0 +1,3 @@
+index, name, pci.bus_id, driver_version, vbios_version, memory.total [MiB], power.limit [W], power.default_limit [W], power.min_limit [W], power.max_limit [W], compute_cap, pcie.link.gen.current, pcie.link.gen.max, pcie.link.width.current, pcie.link.width.max
+0, Tesla P40, 00000000:01:00.0, 580.196.07, 86.02.23.00.00, 24576 MiB, 250.00 W, 250.00 W, 125.00 W, 250.00 W, 6.1, 1, 3, 8, 16
+1, Tesla P40, 00000000:03:00.0, 580.196.07, 86.02.23.00.00, 24576 MiB, 250.00 W, 250.00 W, 125.00 W, 250.00 W, 6.1, 1, 3, 8, 16

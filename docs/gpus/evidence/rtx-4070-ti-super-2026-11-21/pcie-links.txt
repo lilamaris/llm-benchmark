@@ -1,0 +1,28 @@
+[0000:00:01.1]
+path: /sys/devices/pci0000:00/0000:00:01.1
+vendor: 0x1022
+device: 0x14db
+subsystem_vendor: 0x1043
+subsystem_device: 0x8877
+revision: 0x00
+current_link_speed: 2.5 GT/s PCIe
+current_link_width: 16
+max_link_speed: 16.0 GT/s PCIe
+max_link_width: 16
+numa_node: -1
+local_cpulist: 0-11
+driver: /sys/bus/pci/drivers/pcieport
+[0000:01:00.0]
+path: /sys/devices/pci0000:00/0000:00:01.1/0000:01:00.0
+vendor: 0x10de
+device: 0x2705
+subsystem_vendor: 0x10de
+subsystem_device: 0x18ce
+revision: 0xa1
+current_link_speed: 2.5 GT/s PCIe
+current_link_width: 16
+max_link_speed: 16.0 GT/s PCIe
+max_link_width: 16
+numa_node: -1
+local_cpulist: 0-11
+driver: /sys/bus/pci/drivers/nvidia

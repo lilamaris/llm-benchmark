@@ -1,0 +1,7 @@
+Captured: 2026-11-21T10:25:27.605841+09:00
+$ nvidia-smi --query-gpu=index,name,uuid,pci.bus_id,driver_version,memory.total,power.limit,pcie.link.gen.current,pcie.link.width.current --format=csv
+Exit code: 0
+
+index, name, uuid, pci.bus_id, driver_version, memory.total [MiB], power.limit [W], pcie.link.gen.current, pcie.link.width.current
+0, Tesla V100-SXM2-16GB, GPU-f40e4704-f965-0538-02a6-bad555771ed1, 00000000:04:00.0, 580.196.07, 16384 MiB, 300.00 W, 3, 16
+1, Tesla V100-SXM2-16GB, GPU-f77f10d6-4f76-49d5-2d9c-0d5b88694135, 00000000:05:00.0, 580.196.07, 16384 MiB, 300.00 W, 3, 16

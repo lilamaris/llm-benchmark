@@ -1,0 +1,2 @@
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  580.196.07  Wed Oct  7 19:57:28 UTC 2026
+GCC version:  gcc version 14.2.0 (Debian 14.2.0-19) 
